@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graduation Ceremony · NVIS 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Tenor+Sans&family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+const CONFIG = {
+  schoolName:      "New Vision International School",
+  schoolShortName: "NVIS",
+  schoolCity:      "Riyadh, Saudi Arabia",
+  schoolLogoSrc:   "data:image/jpeg;base64,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",
+
+  eventTitle:  "Graduation Ceremony",
+  grades:      "Sixth, Ninth & Twelfth Grade",
+  classYear:   "2026",
+
+  date:      "Sunday, 18 May",
+  time:      "Nine o'Clock in the Evening",
+  doorsOpen: "Doors open at half past seven",
+  venueName: "New Vision Schools, Al Wadi",
+  venueAddr: "2257 Monjed Street, Al Wadi · Riyadh 13313",
+
+  locationMapsURL: "https://www.google.com/maps/place/New+Vision+Schools+-+Al+Wadi/@24.7926968,46.6803229,17z",
+
+  contactEmail: "admin@newvisionschool.edu.sa",
+  contactPhone: "+966 XX XXX XXXX",
+  rsvpDeadline: "15 May",
+
+  inviteBody: "We warmly invite you to celebrate the achievements of our remarkable graduates — young minds who have worked with dedication, curiosity, and heart to reach this milestone.",
+
+  videoSrc: "video (2).mp4",
+
+  credits: [
+    { name: "Hashem Omar Naser", role: "Web Development" },
+    { name: "Ahmed Alhamdy",     role: "Design & Content" },
+  ],
+};
+
+const TRANSLATIONS = {
+  en: {
+    schoolName:    "New Vision International School",
+    schoolCity:    "Riyadh, Saudi Arabia",
+    presents:      "cordially presents",
+    eventTitle:    "Graduation Ceremony",
+    eventYear:     "Class of 2026",
+    grades:        "Sixth, Ninth & Twelfth Grade",
+    inviteBody:    "We warmly invite you to celebrate the achievements of our remarkable graduates — young minds who have worked with dedication, curiosity, and heart to reach this milestone.",
+    videoLabel:    "Graduation Highlights",
+    dateLabel:     "Date",
+    dateVal:       "Sunday, 18 May",
+    timeLabel:     "Time",
+    timeVal:       "Nine o'Clock in the Evening",
+    doorsOpen:     "Doors open at half past seven",
+    attireLabel:   "Attire",
+    attireVal:     "Formal",
+    attireSub:     "Black tie welcome",
+    venueLabel:    "Venue",
+    venueName:     "New Vision Schools, Al Wadi",
+    venueAddr:     "2257 Monjed Street, Al Wadi · Riyadh 13313",
+    mapsLink:      "View on Map",
+    rsvpHeading:   "Kindly Confirm Your Attendance",
+    rsvpBody:      "Please respond to the contact details below by 15 May.",
+    emailLabel:    "Email",
+    phoneLabel:    "Telephone",
+    rsvpNote:      "Attendance is kindly requested to be confirmed no later than <strong>15 May</strong>.",
+    toggleBtn:     "عربي",
+    credits: [
+      { name: "Hashem Omar Naser", role: "Web Development" },
+      { name: "Ahmed Alhamdy",     role: "Design & Content" },
+    ],
+  },
+  ar: {
+    schoolName:    "مدرسة نيو فيجن الدولية",
+    schoolCity:    "الرياض، المملكة العربية السعودية",
+    presents:      "تشرف بتقديم",
+    eventTitle:    "حفل التخرج",
+    eventYear:     "دفعة 2026",
+    grades:        "الصف السادس، التاسع والثاني عشر",
+    inviteBody:    "نتشرف بدعوتكم للاحتفال بإنجازات خريجينا المتميزين — عقول شابة عملت بتفانٍ وفضول وعزيمة للوصول إلى هذه المحطة المميزة.",
+    videoLabel:    "لقطات من حفل التخرج",
+    dateLabel:     "التاريخ",
+    dateVal:       "الأحد، 18 مايو",
+    timeLabel:     "الوقت",
+    timeVal:       "التاسعة مساءً",
+    doorsOpen:     "تُفتح الأبواب في السابعة والنصف",
+    attireLabel:   "الزي",
+    attireVal:     "رسمي",
+    attireSub:     "البدلة الرسمية مرحّب بها",
+    venueLabel:    "المكان",
+    venueName:     "مدارس نيو فيجن، الوادي",
+    venueAddr:     "شارع منجد 2257، الوادي · الرياض 13313",
+    mapsLink:      "عرض على الخريطة",
+    rsvpHeading:   "يُرجى تأكيد حضوركم",
+    rsvpBody:      "نأمل منكم التواصل عبر بيانات الاتصال أدناه قبل 15 مايو.",
+    emailLabel:    "البريد الإلكتروني",
+    phoneLabel:    "الهاتف",
+    rsvpNote:      "يُرجى تأكيد الحضور في موعد أقصاه <strong>15 مايو</strong>.",
+    toggleBtn:     "English",
+    credits: [
+      { name: "هاشم عمر ناصر", role: "تطوير الموقع" },
+      { name: "أحمد الحمدي",   role: "التصميم والمحتوى" },
+    ],
+  },
+};
+</script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy-deep:   #071840;
+  --navy:        #0d2560;
+  --navy-mid:    #163280;
+  --navy-light:  #1e4099;
+  --cyan:        #4aaee0;
+  --cyan-bright: #6ec4f0;
+  --cyan-faint:  #a8d8f0;
+  --white:       #ffffff;
+  --white-90:    rgba(255,255,255,0.90);
+  --white-60:    rgba(255,255,255,0.60);
+  --white-20:    rgba(255,255,255,0.12);
+  --white-10:    rgba(255,255,255,0.07);
+  --rule:        rgba(74,174,224,0.25);
+  --rule-bright: rgba(74,174,224,0.55);
+}
+
+html { background: var(--navy-deep); }
+
+body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  background: var(--navy-deep);
+  min-height: 100vh;
+  padding: 3rem 1rem 5rem;
+  color: var(--white);
+  transition: font-family 0.3s;
+}
+
+html[lang="ar"] body {
+  font-family: 'Noto Naskh Arabic', serif;
+}
+
+html[lang="ar"] .event-title,
+html[lang="ar"] .rsvp-heading,
+html[lang="ar"] .venue-name {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+html[lang="ar"] .school-name,
+html[lang="ar"] .detail-kicker,
+html[lang="ar"] .venue-label,
+html[lang="ar"] .video-label,
+html[lang="ar"] .contact-kicker,
+html[lang="ar"] .maps-link {
+  font-family: 'Noto Naskh Arabic', serif;
+  letter-spacing: 0;
+}
+
+html[lang="ar"] .presents,
+html[lang="ar"] .cordially,
+html[lang="ar"] .venue-address,
+html[lang="ar"] .rsvp-body,
+html[lang="ar"] .rsvp-note,
+html[lang="ar"] .detail-sub,
+html[lang="ar"] .footer-school-text p:last-child {
+  font-style: normal;
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1.15em;
+  line-height: 2;
+}
+
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── LANGUAGE TOGGLE ── */
+.lang-toggle-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+html[lang="ar"] .lang-toggle-wrap {
+  justify-content: flex-start;
+}
+
+.lang-btn {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  background: transparent;
+  border: 1px solid var(--cyan);
+  padding: 9px 22px;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-btn:hover {
+  background: var(--cyan);
+  color: var(--navy-deep);
+}
+
+.lang-btn svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+html[lang="ar"] .lang-btn {
+  font-family: 'Noto Naskh Arabic', serif;
+  letter-spacing: 0;
+  font-size: 13px;
+}
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes rise {
+  to { opacity: 1; transform: none; }
+}
+
+/* ── RULE ── */
+.rule {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.rule::before,
+.rule::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--rule-bright);
+}
+.rule-diamond {
+  width: 5px;
+  height: 5px;
+  background: var(--cyan);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* ── HEADER ── */
+.header {
+  background: var(--navy);
+  border: 1px solid var(--rule);
+  border-bottom: none;
+  text-align: center;
+  padding: 3.5rem 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 60px solid rgba(74,174,224,0.055);
+  pointer-events: none;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 30px solid rgba(74,174,224,0.04);
+  pointer-events: none;
+}
+
+.crest {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 2px solid var(--cyan);
+  box-shadow: 0 0 0 1px rgba(74,174,224,0.18), 0 0 28px rgba(74,174,224,0.12);
+  overflow: hidden;
+  margin: 0 auto 1.75rem;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.crest img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.school-name {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 2.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.presents {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--white-60);
+  margin-bottom: 1rem;
+}
+
+.event-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 7vw, 56px);
+  font-weight: 400;
+  line-height: 1.08;
+  color: var(--white);
+  letter-spacing: -0.5px;
+}
+
+.event-year {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(20px, 4vw, 30px);
+  color: var(--cyan);
+  font-weight: 400;
+  margin-top: 0.3rem;
+}
+
+html[lang="ar"] .event-year {
+  font-family: 'Amiri', serif;
+  font-style: normal;
+}
+
+.grades-line {
+  font-family: 'Crimson Pro', serif;
+  font-size: 16px;
+  color: var(--cyan-faint);
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  padding-bottom: 2.75rem;
+}
+
+/* ── INVITE BODY ── */
+.invite-body {
+  background: var(--navy);
+  border: 1px solid var(--rule);
+  border-top: none;
+  border-bottom: none;
+  padding: 0 3rem 2.5rem;
+  text-align: center;
+}
+
+.cordially {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--white-90);
+  line-height: 1.8;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+/* ── VIDEO ── */
+.video-wrap {
+  background: var(--navy);
+  border: 1px solid var(--rule);
+  border-top: none;
+  border-bottom: none;
+  padding: 0 2.5rem 2.5rem;
+}
+
+.video-label {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--rule-bright);
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+
+.video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── DETAILS ── */
+.details-section {
+  background: var(--navy);
+  border: 1px solid var(--rule);
+  border-top: none;
+  border-bottom: none;
+  padding: 0 2.5rem 2.5rem;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  text-align: center;
+}
+
+.detail-divider {
+  background: var(--rule-bright);
+  margin: 0.5rem 0;
+}
+
+.detail-item { padding: 1rem 1.25rem; }
+
+.detail-kicker {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 0.6rem;
+}
+
+.detail-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.35;
+}
+
+html[lang="ar"] .detail-value {
+  font-family: 'Amiri', serif;
+}
+
+.detail-sub {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--white-60);
+  margin-top: 0.3rem;
+}
+
+/* ── VENUE ── */
+.venue-section {
+  background: var(--navy-deep);
+  border: 1px solid var(--rule);
+  border-top: none;
+  border-bottom: none;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.venue-section::before {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 80px solid rgba(74,174,224,0.04);
+  pointer-events: none;
+}
+
+.venue-label {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 1.25rem;
+}
+
+.venue-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.venue-rule {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.venue-rule::before,
+.venue-rule::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(74,174,224,0.18);
+}
+.venue-rule-diamond {
+  width: 5px;
+  height: 5px;
+  background: var(--cyan);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.venue-address {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--cyan-faint);
+  line-height: 1.65;
+  margin-bottom: 2.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.maps-link {
+  display: inline-block;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  text-decoration: none;
+  border: 1px solid var(--cyan);
+  padding: 11px 30px;
+  transition: background 0.25s, color 0.25s;
+  position: relative;
+  z-index: 1;
+}
+.maps-link:hover {
+  background: var(--cyan);
+  color: var(--navy-deep);
+}
+
+/* ── RSVP ── */
+.rsvp-section {
+  background: var(--navy-mid);
+  border: 1px solid var(--rule);
+  border-top: none;
+  border-bottom: none;
+  padding: 2.75rem 2.5rem;
+  text-align: center;
+}
+
+.rsvp-heading {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.rsvp-body {
+  font-family: 'Crimson Pro', serif;
+  font-size: 17px;
+  color: var(--white-60);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.contact-item {
+  background: var(--white-10);
+  border: 1px solid var(--rule);
+  padding: 0.875rem 1.75rem;
+  min-width: 200px;
+}
+
+.contact-kicker {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 0.4rem;
+}
+
+.contact-val {
+  font-family: 'Crimson Pro', serif;
+  font-size: 15px;
+  color: var(--white-90);
+}
+
+.rsvp-note {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--white-60);
+}
+
+.rsvp-note strong {
+  color: var(--cyan-faint);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--navy);
+  border: 1px solid var(--rule);
+  padding: 1.75rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-school {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.footer-crest {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--cyan);
+  overflow: hidden;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-crest img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer-school-text p:first-child {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white-90);
+}
+
+html[lang="ar"] .footer-school-text p:first-child {
+  font-family: 'Noto Naskh Arabic', serif;
+  letter-spacing: 0;
+  font-size: 13px;
+}
+
+.footer-school-text p:last-child {
+  font-family: 'Crimson Pro', serif;
+  font-size: 12px;
+  color: var(--white-60);
+  margin-top: 2px;
+  font-style: italic;
+}
+
+.footer-credit {
+  font-family: 'Crimson Pro', serif;
+  font-size: 12px;
+  color: var(--white-60);
+  text-align: right;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+html[lang="ar"] .footer-credit {
+  font-family: 'Amiri', serif;
+  font-style: normal;
+  text-align: left;
+}
+
+/* ── TRANSITION ── */
+.translating * {
+  transition: opacity 0.25s ease;
+  opacity: 0.4;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 520px) {
+  body { padding: 0 0 3rem; }
+  .header { padding: 2.5rem 1.5rem 0; }
+  .invite-body { padding: 0 1.5rem 2rem; }
+  .video-wrap { padding: 0 1.25rem 2rem; }
+  .details-section { padding: 0 1rem 2rem; }
+  .venue-section, .rsvp-section { padding: 2rem 1.5rem; }
+  .footer { padding: 1.5rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .footer-credit { text-align: left; }
+  .detail-row { grid-template-columns: 1fr; }
+  .detail-divider { display: none; }
+  .detail-item { padding: 0.75rem 0; border-bottom: 1px solid var(--rule); }
+  .detail-item:last-child { border-bottom: none; }
+  .cordially { font-size: 17px; }
+  .header::before, .header::after { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Language Toggle -->
+  <div class="lang-toggle-wrap reveal" style="animation-delay:0s">
+    <button class="lang-btn" id="lang-btn" onclick="toggleLang()">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+      </svg>
+      <span id="lang-btn-text">عربي</span>
+    </button>
+  </div>
+
+  <div class="header reveal" style="animation-delay:0.05s">
+    <div class="crest">
+      <img id="school-logo" src="" alt="NVIS crest">
+    </div>
+    <p class="school-name" id="school-name-el"></p>
+    <p class="presents" id="presents-el"></p>
+    <h1 class="event-title" id="event-title-el"></h1>
+    <p class="event-year" id="event-year-el"></p>
+    <div class="rule" style="margin-top:2rem;margin-bottom:0">
+      <div class="rule-diamond"></div>
+    </div>
+    <p class="grades-line" id="grades-line-el"></p>
+  </div>
+
+  <div class="invite-body reveal" style="animation-delay:0.12s">
+    <div class="rule"><div class="rule-diamond"></div></div>
+    <p class="cordially" id="invite-body-el"></p>
+    <div class="rule"><div class="rule-diamond"></div></div>
+  </div>
+
+  <div class="video-wrap reveal" id="video-section" style="animation-delay:0.18s">
+    <p class="video-label" id="video-label-el"></p>
+    <div class="video-frame">
+      <video id="grad-video" controls autoplay muted loop playsinline></video>
+    </div>
+    <div class="rule" style="margin-bottom:0"><div class="rule-diamond"></div></div>
+  </div>
+
+  <div class="details-section reveal" style="animation-delay:0.24s">
+    <div class="detail-row">
+      <div class="detail-item">
+        <p class="detail-kicker" id="date-label-el"></p>
+        <p class="detail-value" id="val-date"></p>
+      </div>
+      <div class="detail-divider"></div>
+      <div class="detail-item">
+        <p class="detail-kicker" id="time-label-el"></p>
+        <p class="detail-value" id="val-time"></p>
+        <p class="detail-sub" id="val-doors"></p>
+      </div>
+      <div class="detail-divider"></div>
+      <div class="detail-item">
+        <p class="detail-kicker" id="attire-label-el"></p>
+        <p class="detail-value" id="attire-val-el"></p>
+        <p class="detail-sub" id="attire-sub-el"></p>
+      </div>
+    </div>
+    <div class="rule" style="margin-bottom:0"><div class="rule-diamond"></div></div>
+  </div>
+
+  <div class="venue-section reveal" style="animation-delay:0.30s">
+    <p class="venue-label" id="venue-label-el"></p>
+    <p class="venue-name" id="venue-name-el"></p>
+    <div class="venue-rule"><div class="venue-rule-diamond"></div></div>
+    <p class="venue-address" id="venue-addr-el"></p>
+    <a class="maps-link" id="maps-link" target="_blank" href="https://www.google.com/maps/place/New+Vision+Schools+-+Al+Wadi/@24.7926968,46.6803229,17z"></a>
+  </div>
+
+  <div class="rsvp-section reveal" style="animation-delay:0.36s">
+    <div class="rule"><div class="rule-diamond"></div></div>
+    <h2 class="rsvp-heading" id="rsvp-heading-el"></h2>
+    <p class="rsvp-body" id="rsvp-body-el"></p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <p class="contact-kicker" id="email-label-el"></p>
+        <p class="contact-val" id="contact-email-el"></p>
+      </div>
+      <div class="contact-item">
+        <p class="contact-kicker" id="phone-label-el"></p>
+        <p class="contact-val" id="contact-phone-el"></p>
+      </div>
+    </div>
+    <p class="rsvp-note" id="rsvp-note-el"></p>
+    <div class="rule" style="margin-bottom:0"><div class="rule-diamond"></div></div>
+  </div>
+
+  <footer class="footer reveal" style="animation-delay:0.42s">
+    <div class="footer-school">
+      <div class="footer-crest">
+        <img id="footer-logo" src="" alt="">
+      </div>
+      <div class="footer-school-text">
+        <p id="footer-school-name"></p>
+        <p id="footer-school-city"></p>
+      </div>
+    </div>
+    <div class="footer-credit" id="footer-credit"></div>
+  </footer>
+
+</div>
+
+<script>
+const C = CONFIG;
+let currentLang = 'en';
+
+function logoFallback(el, short) {
+  el.onerror = function() {
+    const span = document.createElement('span');
+    span.style.cssText = 'font-family:Tenor Sans,sans-serif;font-size:11px;letter-spacing:2px;color:#4aaee0';
+    span.textContent = short;
+    el.parentNode.replaceChild(span, el);
+  };
+}
+
+const logo = document.getElementById('school-logo');
+logo.src = C.schoolLogoSrc;
+logoFallback(logo, C.schoolShortName);
+
+const footerLogo = document.getElementById('footer-logo');
+footerLogo.src = C.schoolLogoSrc;
+logoFallback(footerLogo, C.schoolShortName.slice(0,2));
+
+const videoEl = document.getElementById('grad-video');
+if (C.videoSrc) {
+  videoEl.src = C.videoSrc;
+} else {
+  document.getElementById('video-section').style.display = 'none';
+}
+
+document.getElementById('contact-email-el').textContent = C.contactEmail;
+document.getElementById('contact-phone-el').textContent = C.contactPhone;
+
+function applyTranslation(lang) {
+  const t = TRANSLATIONS[lang];
+  const html = document.documentElement;
+
+  // Fade effect
+  document.body.classList.add('translating');
+  setTimeout(() => document.body.classList.remove('translating'), 280);
+
+  html.lang = lang;
+  html.dir  = lang === 'ar' ? 'rtl' : 'ltr';
+
+  document.getElementById('school-name-el').textContent   = t.schoolName;
+  document.getElementById('presents-el').textContent      = t.presents;
+  document.getElementById('event-title-el').textContent   = t.eventTitle;
+  document.getElementById('event-year-el').textContent    = t.eventYear;
+  document.getElementById('grades-line-el').textContent   = t.grades;
+  document.getElementById('invite-body-el').textContent   = t.inviteBody;
+  document.getElementById('video-label-el').textContent   = t.videoLabel;
+  document.getElementById('date-label-el').textContent    = t.dateLabel;
+  document.getElementById('val-date').textContent         = t.dateVal;
+  document.getElementById('time-label-el').textContent    = t.timeLabel;
+  document.getElementById('val-time').textContent         = t.timeVal;
+  document.getElementById('val-doors').textContent        = t.doorsOpen;
+  document.getElementById('attire-label-el').textContent  = t.attireLabel;
+  document.getElementById('attire-val-el').textContent    = t.attireVal;
+  document.getElementById('attire-sub-el').textContent    = t.attireSub;
+  document.getElementById('venue-label-el').textContent   = t.venueLabel;
+  document.getElementById('venue-name-el').textContent    = t.venueName;
+  document.getElementById('venue-addr-el').textContent    = t.venueAddr;
+  document.getElementById('maps-link').textContent        = t.mapsLink;
+  document.getElementById('rsvp-heading-el').textContent  = t.rsvpHeading;
+  document.getElementById('rsvp-body-el').textContent     = t.rsvpBody;
+  document.getElementById('email-label-el').textContent   = t.emailLabel;
+  document.getElementById('phone-label-el').textContent   = t.phoneLabel;
+  document.getElementById('rsvp-note-el').innerHTML       = t.rsvpNote;
+  document.getElementById('footer-school-name').textContent = t.schoolName;
+  document.getElementById('footer-school-city').textContent = t.schoolCity;
+  document.getElementById('lang-btn-text').textContent    = t.toggleBtn;
+
+  document.getElementById('footer-credit').innerHTML = t.credits
+    .map(p => `${p.name} · <span style="color:#4aaee0">${p.role}</span>`)
+    .join('<br>');
+}
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'ar' : 'en';
+  applyTranslation(currentLang);
+}
+
+// Initial render
+applyTranslation('en');
+</script>
+</body>
+</html>
